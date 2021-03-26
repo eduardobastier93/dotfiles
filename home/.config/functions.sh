@@ -17,29 +17,18 @@ function translate() {
   cat $typing
 }
 
-if [ $HOST = "odin" ]; then
-  function cm() {
-    translate
-    git add . && git commit --message $msg --signoff --author "Eduardo Bastier <eduardobastier93@gmail.com>" && git push -f
-  }
-  function c() {
-    git add . && git commit --author "${1}" && git push -f
-  }
-  function amend() {
-    git add . && git commit --signoff --amend && git push -f
-  }
-else
-  function cm() {
-    translate
-    git add . && git commit --message $msg --signoff --author "Eduardo Bastier <eduardobastier93@gmail.com>"
-  }
-  function c() {
-    git add . && git commit --author "${1}"
-  }
-  function amend() {
-    git add . && git commit --amend
-  }
-fi
+function cm() {
+  translate
+  git add . && git commit --message $msg --signoff --author "Eduardo Bastier <eduardobastier93@gmail.com>"
+}
+
+function c() {
+  git add . && git commit --author "${1}"
+}
+
+function amend() {
+  git add . && git commit --amend
+}
 
 function update() {
   $HOME/.config/scripts/pacman-update.sh
