@@ -14,8 +14,8 @@ function bt() {
 }
 
 scan="Scan devices"
-bt1="JBL T450BT"
-bt2="JBL GO"
+bt1="Haylou GT1 XR R"
+bt2="Haylou GT1 XR L"
 bt3="JBL GO 2"
 bt4="KD-750"
 
@@ -26,9 +26,9 @@ case $chosen in
     $scan)
       bluetoothctl scan on;;
     $bt1)
-      bt "78:44:05:BE:8A:7E";; # JBL T450BT
+      bt "9C:19:C2:A6:F9:8C";; # Haylou GT1 XR R
     $bt2)
-      bt "78:44:05:86:21:18";; # JBL GO
+      bt "9C:19:C2:A6:FB:E1";; # Haylou GT1 XR L
     $bt3)
       bt "70:99:1C:51:45:9B";; # JBL GO 2
     $bt4)
