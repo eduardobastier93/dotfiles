@@ -74,6 +74,7 @@
     },
     "format": "{icon} {capacity}%",
     "format-icons": ["", "", "", "", ""],
+    "format-charging": " {capacity}%",
     "max-length": 25
   },
   "network": {
