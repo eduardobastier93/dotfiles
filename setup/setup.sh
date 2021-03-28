@@ -3,9 +3,8 @@
 function personalconfig() {
   pwd=$(pwd) && cd $HOME
   git config --global user.email "eduardobastier93@gmail.com"
-  git config --global user.name "Eduardo Bastier"
+  git config --global user.name "eduardobastier93"
   git config --global http.postBuffer 524288000
-  rm -rf $HOME/.zsh_history && wget https://raw.githubusercontent.com/mamutal91/zsh-history/master/.zsh_history
   mkdir -p $HOME/{Images,Videos} &>/dev/null
   cd $pwd
 }
@@ -61,7 +60,7 @@ done
 
 source $HOME/.dotfiles/setup/etc.sh
 
-if [[ $USER = "eduardobastier" ]]; then
+if [[ $USER = "eduardobastier93" ]]; then
   echo "Set personal configs"
   personalconfig
 fi
