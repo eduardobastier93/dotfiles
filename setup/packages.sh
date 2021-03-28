@@ -11,6 +11,7 @@ readonly PACKAGES=(
 
   # apps
   alacritty atom
+  gnome-calculator
   cronie
   filezilla
   git gpicview
@@ -18,6 +19,7 @@ readonly PACKAGES=(
   lxappearance
   mako
   nano nano-syntax-highlighting
+  neofetch
   reflector
   stow sway swaybg
   telegram-desktop tree thunar thunar-archive-plugin thunar-media-tags-plugin thunar-volman transmission-gtk
