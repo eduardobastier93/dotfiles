@@ -4,7 +4,7 @@ env:
   TERM: alacritty
 
 import:
-  - /home/mamutal91/.config/alacritty/colors.yml
+  - /home/eduardobastier93/.config/alacritty/colors.yml
 
 scrolling:
   history: 10000
