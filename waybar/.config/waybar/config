@@ -75,6 +75,7 @@
     "format": "{icon} {capacity}%",
     "format-icons": ["", "", "", "", ""],
     "format-charging": " {capacity}%",
+    "format-full": " {capacity}%",
     "max-length": 25
   },
   "network": {
