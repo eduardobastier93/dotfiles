@@ -1,7 +1,7 @@
 * {
 	border: none;
 	font-size: 11px;
-	margin-top: 2px;
+	margin-top: 3px;
 	font-family: monospace;
 	font-style: normal;
 	opacity: 0.9;
@@ -19,6 +19,7 @@ window#waybar {
 	color: #d8dee9;
 	padding-left: 10px;
 	padding-right: 10px;
+	margin-top: 0px;
 }
 #window {
 	color: #d8dee9;
@@ -44,7 +45,7 @@ window#waybar.empty {
 }
 #mode {
 	background-color: #910909;
-	margin-left: 5px;
+	margin-left: 10px;
 	border-radius: 10px;
 	padding-left: 10px;
 	padding-right: 10px;
@@ -63,6 +64,7 @@ window#waybar.empty {
 	border-radius: 10px 0px 0px 10px;
 	color: #ffffff;
 	margin-left: 10px;
+	padding-left: 10px;
 }
 #custom-whatsapp {
 	color: #25d366;
@@ -73,8 +75,8 @@ window#waybar.empty {
 #custom-bluetooth {
 	color: #5db2ff;
 	border-radius: 0px 10px 10px 0px;
-	margin-right: 6px;
-	padding-right: 6px;
+	margin-right: 10px;
+	padding-right: 10px;
 }
 #custom-spotify {
 	padding-left: 5px;
@@ -82,8 +84,8 @@ window#waybar.empty {
 /* WIDGETS */
 #cpu, #memory, #backlight, #network, #pulseaudio, #battery {
 	background-color: #2e3440;
-	padding-left: 6px;
-	padding-right: 6px;
+	padding-left: 10px;
+	padding-right: 10px;
 }
 #pulseaudio {
 	color: #b8b8b8;
@@ -105,14 +107,14 @@ window#waybar.empty {
 }
 #battery {
 	background-color: #2e3440;
-	color: #FFFFFF;
+	color: #b8b8b8;
 	border-radius: 10px 10px 10px 10px;
-	padding: 6px 6px 6px 6px;
-	margin-left: 8px;
+	padding: 6px 10px 6px 10px;
+	margin-left: 10px;
 }
 
 #battery.charging {
-	color: #FFFFFF;
+	color: #b8b8b8;
 }
 @keyframes blink {
 	to {
@@ -133,10 +135,10 @@ label:focus {
 	background-color: #2e3440;
 }
 #clock {
-	background-color: #50fa7b;
+	background-color: #bb61fa;
 	color: #000000;
 	border-radius: 10px 10px 10px 10px;
-	padding: 6px 6px 6px 6px;
-	margin-left: 8px;
+	padding: 6px 10px 6px 10px;
+	margin-left: 10px;
 	margin-right: 10px;
 }
