@@ -13,6 +13,7 @@ window#waybar {
 #workspaces, #tags {
 	background-color: #2e3440;
 	border-radius: 10px;
+	border: 0.1px solid #bb61fa;
 }
 #workspaces button, #tags button {
   background-color: transparent;
@@ -57,8 +58,9 @@ window#waybar.empty {
 /* BROWSER BOOKMARKS */
 #custom-github, #custom-whatsapp, #custom-keep, #custom-bluetooth {
 	background-color: #2e3440;
-	padding-left: 6px;
-	padding-right: 6px;
+	padding-left: 10px;
+	padding-right: 10px;
+	border: 0.1px solid #bb61fa;
 }
 #custom-github {
 	border-radius: 10px 0px 0px 10px;
@@ -86,6 +88,7 @@ window#waybar.empty {
 	background-color: #2e3440;
 	padding-left: 10px;
 	padding-right: 10px;
+	border: 0.1px solid #bb61fa;
 }
 #pulseaudio {
 	color: #b8b8b8;
@@ -93,13 +96,16 @@ window#waybar.empty {
 }
 #cpu {
 	color: #b8b8b8;
+	border-left: 0.1px solid #bb61fa;
 }
 #memory {
 	color: #b8b8b8;
+	border-left: 0.1px solid #bb61fa;
 }
 #network {
   color: #b8b8b8;
 	border-radius: 0px 10px 10px 0px;
+	border-left: 0.1px solid #bb61fa;
 }
 #pulseaudio.muted {
 	border-radius: 10px 0px 0px 10px;
