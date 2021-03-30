@@ -5,10 +5,7 @@
   "width": 1366, // Waybar width
   // Bar
   "modules-left": [
-    "custom/github",
-    "custom/whatsapp",
-    "custom/keep",
-    "custom/bluetooth",
+    "clock",
     "sway/workspaces",
     "sway/mode",
   ],
@@ -20,7 +17,9 @@
     "memory",
     "network",
     "battery",
-    "clock",
+    "custom/bluetooth",
+    "custom/reboot",
+    "custom/poweroff",
   ],
   // Modules
   "sway/workspaces": {
@@ -102,30 +101,19 @@
       "default": ["", "", ""]
     },
   },
-  "custom/spotify": {
-    "format": " {}",
-    "max-length": 40,
-    "exec": "$HOME/.config/scripts/spotify.sh",
-    "exec-if": "pgrep spotify"
-  },
-  "custom/github": {
-    "format": "",
-    "on-click": "xdg-open https://github.com",
-    "tooltip": false
-  },
-  "custom/whatsapp": {
-    "format": "",
-    "on-click": "xdg-open https://web.whatsapp.com/",
-    "tooltip": false
-  },
-  "custom/keep": {
-    "format": "",
-    "on-click": "xdg-open https://keep.google.com/",
-    "tooltip": false
-  },
   "custom/bluetooth": {
     "format": "",
     "on-click": "$HOME/.config/scripts/bluetooth.sh",
+    "tooltip": false
+  },
+  "custom/reboot": {
+    "format": "",
+    "on-click": "reboot",
+    "tooltip": false
+  },
+  "custom/poweroff": {
+    "format": "",
+    "on-click": "poweroff",
     "tooltip": false
   }
 }

@@ -10,6 +10,14 @@ window#waybar {
 	background-color: transparent;
 	color: #d8dee9;
 }
+#clock {
+	background-color: #bb61fa;
+	color: #000000;
+	border-radius: 10px 10px 10px 10px;
+	padding: 6px 10px 6px 10px;
+	margin-left: 10px;
+	margin-right: 10px;
+}
 #workspaces, #tags {
 	background-color: #2e3440;
 	border-radius: 10px;
@@ -54,34 +62,6 @@ window#waybar.empty {
 #tags button {
   color: #4c566a;
   font-weight: 600;
-}
-/* BROWSER BOOKMARKS */
-#custom-github, #custom-whatsapp, #custom-keep, #custom-bluetooth {
-	background-color: #2e3440;
-	padding-left: 10px;
-	padding-right: 10px;
-	border: 0.1px solid #bb61fa;
-}
-#custom-github {
-	border-radius: 10px 0px 0px 10px;
-	color: #ffffff;
-	margin-left: 10px;
-	padding-left: 10px;
-}
-#custom-whatsapp {
-	color: #25d366;
-}
-#custom-keep {
-	color: #ffd04e;
-}
-#custom-bluetooth {
-	color: #5db2ff;
-	border-radius: 0px 10px 10px 0px;
-	margin-right: 10px;
-	padding-right: 10px;
-}
-#custom-spotify {
-	padding-left: 5px;
 }
 /* WIDGETS */
 #cpu, #memory, #backlight, #network, #pulseaudio, #battery {
@@ -140,11 +120,22 @@ window#waybar.empty {
 label:focus {
 	background-color: #2e3440;
 }
-#clock {
-	background-color: #bb61fa;
-	color: #000000;
-	border-radius: 10px 10px 10px 10px;
-	padding: 6px 10px 6px 10px;
+/* BLUETOOCH, POWEROFF AND REBOOT RIGHT WIDGETS */
+#custom-bluetooth, #custom-reboot, #custom-poweroff {
+	background-color: #2e3440;
+	padding: 10px;
+	border: 0.1px solid #bb61fa;
+}
+#custom-bluetooth {
+	color: #5db2ff;
 	margin-left: 10px;
+	border-radius: 10px 0px 0px 10px;
+}
+#custom-reboot {
+	color: #edc519;
+}
+#custom-poweroff {
+	color: #f53c3c;
 	margin-right: 10px;
+	border-radius: 0px 10px 10px 0px;
 }
